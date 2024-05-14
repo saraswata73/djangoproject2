@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .login-container h1 {
+            color: #1877f2; 
+        }
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-container button {
+            background-color: #1877f2; 
+            color: white;
+            padding: 10px 20px;
+            border:5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 5px;
+        }
+        .login-container button:hover {
+            background-color: #165cbb;
+        }
+        .login-container a {
+            color: #1877f2;
+            text-decoration: none;
+        }
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+        .coco{
+            margin: 4px;
+            box-shadow:;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="login-container">
+        <h1>Login page</h1>
+        <form action="/login" method="">
+            <input type="text" placeholder="Email or Phone" name="email">
+            <input type="password" placeholder="Password" name="password" >
+            <button type="submit">Log In</button>
+        </form>
+        <div class="coco">
+            <a href="/forgot-password">Forgot password?</a>
+        </div>
+        <div class="coco">
+            <a href="/signup">Create a new account</a>
+        </div>
+    </div>
+</body>
+</html>
